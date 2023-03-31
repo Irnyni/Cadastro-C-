@@ -1,0 +1,250 @@
+﻿
+
+@model Homemodel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+ 
+
+</head>
+<body>
+   
+
+    <div class="container">
+
+
+
+        <form action="Clientes">
+            <h2>Cadastro Cliente</h2>
+            <div class="checks">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Fisica
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Juridica
+                    </label>
+                </div>
+
+            </div>
+
+            <label for="CPF">CPF:</label>
+
+            <input type="text" class="form-control" style="width: 400px" required placeholder="Informe seu CPF" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" maxlength="11" size="11">
+            <label for="CNPJ">CNPJ:</label>
+            <input type="text" size="18" maxlength="18" required class="form-control" style="width: 400px" placeholder="Informe seu CNPJ" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+            <label for="Nome">Nome:</label>
+            <input type="text" size="60" maxlength="60" required class="form-control" placeholder="Informe seu nome" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+            <label for="Razão Social">Razão Social:</label>
+            <input type="text" size="60" maxlength="60" required class="form-control" placeholder="Informe sua razão social" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+            <label for="Inscrição Estadual">Incrição Estadual:</label>
+            <input type="number" size="20" maxlength="20" class="form-control" style="width: 400px" placeholder="Informe sua Inscrição Estadual" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+            <label for="RG">RG</label>
+            <input type="number" size="20" maxlength="20" class="form-control" style="width: 400px" placeholder="Informe seu RG" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+            <label for="CEP">CEP:</label>
+            <input type="number" size="9" maxlength="9" required class="form-control" style="width: 300px" placeholder="Informe seu CEP" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+            <label for="Endereço">Endereço:</label>
+            <input type="text" size="50" maxlength="50" class="form-control" placeholder="Informe seu Endereço" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
+            <label for="Número">Número:</label>
+            <input type="number" size="5" maxlength="5" class="form-control" style="width: 300px" placeholder="Informe o número" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+
+            <label for="Complemento">Complemento:</label>
+            <input type="text" size="50" maxlength="50" class="form-control" placeholder="Informe o Complemento" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+            <label for="Bairro">Bairro:</label>
+            <input type="text" size="30" maxlength="30" class="form-control" style="width: 400px" placeholder="Informe o Bairro" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+            <label for="Cidade">Cidade:</label>
+            <input type="text" size="30" maxlength="30" class="form-control" style="width: 400px" placeholder="Informe a Cidade" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
+
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado" class="form-select form-select-lg mb-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhao</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+
+            </select>
+
+            <br>
+
+            <label for="Email">E-mail:</label>
+            <input type="email" size="60" maxlength="60" required class="form-control" placeholder="Informe seu E-mail" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+            <label for="Email para envio NFE">E-mail para envio NFE:</label>
+            <input type="email" size="60" maxlength="60" required class="form-control" placeholder="Informe seu E-mail para envio NF" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+            <label for="Website">Website:</label>
+            <input type="url" size="60" maxlength="60" class="form-control" placeholder="Informe seu Website" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+
+            <div class="contato">
+
+                <h2>Contato</h2>
+
+
+                <label for="entrada do nome">Nome</label>
+                <input type="text" size="30" required placeholder="Informe seu nome" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"> <br>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" size="30" required style="width: 400px" placeholder="Informe seu telefone" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+                <label for="Ramal">Ramal</label>
+                <input type="number" size="5" required style="width: 200px" placeholder="Ramal" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+                <label for="Celular">Celular</label>
+                <input type="tel" size="30" required style="width: 400px" placeholder="Informe seu celular" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+                <label for="email">E-mail</label>
+                <input type="email" size="60" required placeholder="Informe seu e-mail" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+
+
+
+
+            </div>
+
+            <div class="endereco">
+
+                <h2>Endereço de entrega</h2>
+                <label for="CEP">CEP:</label>
+                <input type="number" required class="form-control" placeholder="Informe o CEP" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+                <label for="Endereço">Endereço:</label>
+                <input type="text" size="50" maxlength="50" class="form-control" placeholder="Informe o Endereço" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
+                <label for="Número">Número:</label>
+                <input type="number" size="5" maxlength="5" class="form-control" style="width: 300px" placeholder="Informe o número" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+
+                <label for="Complemento">Complemento:</label>
+                <input type="text" size="50" maxlength="50" class="form-control" placeholder="Informe o Complemento" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+                <label for="Bairro">Bairro:</label>
+                <input type="text" size="30" maxlength="30" class="form-control" style="width: 400px" placeholder="Informe o Bairro" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"><br>
+
+                <label for="Cidade">Cidade:</label>
+                <input type="text" size="30" maxlength="30" class="form-control" style="width: 400px" placeholder="Informe a Cidade" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
+
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" class="form-select form-select-lg mb-3" aria-describedby="inputGroup-sizing-sm">
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhao</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+
+            </div>
+
+            <div class="adicionais">
+                <h2>Dados adicionais</h2>
+
+                <label for="formapag">Forma de pagamento</label>
+                <select name="" id="formaspagamentos" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Selecione a forma de pagamento</option>
+                    <option value="1">A vista</option>
+                    <option value="2">15 dias</option>
+                    <option value="3">30 dias</option>
+                    <option value="4">30/60</option>
+                    <option value="4">30/60/90</option>
+                </select><br>
+                <div class="atev">
+                    <label id="tipo">Consumidor final?</label><br>
+                    <input class="form-check-input" type="radio" id="Consumidorfinal" name="cliente" value="final">
+                    <label for="cf">Sim</label><br>
+                    <input class="form-check-input" type="radio" id="ci" name="cliente" value="intermediario">
+                    <label for="ci">Não</label><br>
+                </div>
+
+
+                <label for="ramo">Ramo de atividade</label>
+                <select name="" id="ramo" class="form-select form-select-lg mb-3" aria-describedby="inputGroup-sizing-sm">
+                    <option value="1">Industria</option>
+                    <option value="2">Atacado</option>
+                    <option value="3">Varejo</option>
+                </select><br>
+
+                <label id="tipo">Regime tributário</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Simples nacional
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Regime normal
+
+                    </label>
+                    <br>
+
+                    <input class="button" type="Submit" value="Salvar">
+                    <input class="button" type="reset" value="Limpar"><br><br>
+                    <input class="data" type="date" e>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body>
+
+

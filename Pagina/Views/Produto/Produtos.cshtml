@@ -1,0 +1,143 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<head>
+
+
+
+    <title>Cadastro de produto</title>
+</head>
+<body>
+    
+
+    <div class="container">
+
+
+
+        <form action="Produtos">
+            <h2>Cadastrar Produtos</h2>
+
+
+            <label for="codigo do produto">Código do produto:</label>
+            <input type="text" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe o Código do Produto" aria-describedby="inputGroup-sizing-sm" size="10" maxlength="10" required>
+            <label for="nome do produto">Nome do produto:</label>
+            <input type="text" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe o nome do Produto" aria-describedby="inputGroup-sizing-sm" size="50" maxlength="50" required>
+
+            <label for="marca">Marca:</label>
+            <input type="text" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe a Marca" aria-describedby="inputGroup-sizing-sm" size="30" maxlength="30" required>
+            <label for="peso bruto">Peso bruto:</label>
+            <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe o Peso bruto" aria-describedby="inputGroup-sizing-sm" size="12" maxlength="12" required>
+
+            <label for="peso Liquido">Peso Liquido:</label>
+            <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 300px" placeholder="Informe o Peso Líquido" aria-describedby="inputGroup-sizing-sm" size="12" maxlength="12">
+            <label for="NCM">NCM (Nomenclatura Comum do Mercosul):</label>
+            <input type="text" required class="form-control" aria-label="Sizing example input" style="width: 550px" placeholder="Informe a Nomeclatura Comum do Mercosul" aria-describedby="inputGroup-sizing-sm" size="8" maxlength="8"> <!-- Só números?!-->
+
+            <label for="localização no estoque"> Localização no estoque:</label>
+            <input type="text" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe a Localização no Estoque" aria-describedby="inputGroup-sizing-sm" size="10" maxlength="10" required>
+
+            <label for="estoque mínimo">Estoque mínimo:</label>
+            <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 350px" placeholder="Informe o Estoque mínimo" aria-describedby="inputGroup-sizing-sm" size="12" maxlength="12">
+
+            <label for="estoque máximo">Estoque máximo:</label>
+            <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 350px" placeholder="Informe o Estoque Máximo" aria-describedby="inputGroup-sizing-sm" size="12" maxlength="12">
+
+
+            <label for="código GTIN/EAN,">Código GTIN/EAN:</label>
+            <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe o Código GTIN/EAN" aria-describedby="inputGroup-sizing-sm" size="13" maxlength="13"><!-- Só números?!-->
+
+            <label for="valor de Venda">Valor de Venda:</label>
+            <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe o Valor de Venda" aria-describedby="inputGroup-sizing-sm" size="12" maxlength="12"><!-- Só números?!-->
+
+            <label for="valor de custo">Valor de custo:</label>
+            <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe o Valor de Custo" aria-describedby="inputGroup-sizing-sm" size="12" maxlength="12"><!-- Só números?!-->
+
+
+
+
+            <div class="origem">
+                <!-- Como posso melhorar isso aqui?!-->
+                <h2>Origem do produto</h2>
+
+                <label for="origemproduto">Origem do Produto</label>
+                <select name="" class="form-select form-select-lg mb-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="origemproduto">
+                    <option value="0">Nacional</option>
+                    <option value="1">Estrangeira-Importação direta</option>
+                    <option value="2">Estrangeira-Adquirida no mercado interno</option>
+                    <option value="3">Nacional</option>
+                    <option value="4">Mercadoria ou bem com conteúdo de importação superior a 40%</option>
+                    <br>
+
+                </select>
+            </div>
+            <div class="tipo de classificacao">
+                <!-- Como posso melhorar isso aqui?!-->
+                <h2>Tipo de classificação</h2>
+
+                <label for="tipo de classificacao">Tipo de classificação</label>
+                <select name="" class="form-select form-select-lg mb-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="tipo de classificacao">
+                    <option value="00">Mercadoria para revenda</option>
+                    <option value="01">Materia Prima</option>
+                    <option value="02">Embalagem</option>
+                    <option value="03">Produto em Processo</option>
+                    <option value="04">Produto Acabado</option>
+                    <option value="05">Subproduto</option>
+                    <option value="06">Produto Intermediário</option>
+                    <option value="07">Material de uso e consumo</option>
+                    <option value="08">Ativo Imobilizado</option>
+                    <option value="09">Serviços</option>
+                    <option value="10">Outros insumos</option>
+                    <option value="99">Outras</option>
+                </select>
+            </div>
+
+
+            <div class="checks">
+                <label id="tipo">Situação?</label><br>
+                <div class="form-check">
+
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="situacao">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Ativo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="in" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Inativo
+                    </label>
+                </div>
+
+
+
+                <label for="aliquota de ICMS">Alíquota de ICMS:</label>
+                <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe a Aliquota de ICMS" aria-describedby="inputGroup-sizing-sm" size="5" maxlength="5" required>
+                <label for="aliquota de IPI">Alíquota de IPI:</label>
+                <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe a Aliquota de IPI" aria-describedby="inputGroup-sizing-sm" size="5" maxlength="5" required>
+                <label for="aliquota de PIS">Alíquota de PIS:</label>
+                <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe a Aliquota de PIS" aria-describedby="inputGroup-sizing-sm" size="5" maxlength="5" required>
+                <label for="aliquota de Cofins">Alíquota de Cofins:</label>
+                <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe a Aliquota de Cofins" aria-describedby="inputGroup-sizing-sm" size="5" maxlength="5" required>
+                <label for="unidade tributavel">Unidade tributável (pc, kg, un):</label>
+                <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe a unidade tributável" aria-describedby="inputGroup-sizing-sm" size="3" maxlength="3" required>
+                <label for="codigo CEST (codigo especificador da Situacao Tributaria)">Código CEST (código especificador da Situação Tributária):</label>
+                <input type="number" required class="form-control" aria-label="Sizing example input" style="width: 400px" placeholder="Informe o Código CEST" aria-describedby="inputGroup-sizing-sm" size="8" maxlength="8" required>
+
+                <br>
+
+                <input class="button" type="Submit" value="Salvar">
+                <input class="button" type="reset" value="Limpar"><br><br>
+
+                <input class="data" type="date" e>
+
+
+
+
+        </form>
+
+
+    </div>
+
+</body>

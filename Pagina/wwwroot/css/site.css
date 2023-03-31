@@ -1,0 +1,205 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+* {
+    box-sizing: border-box;
+    color: #500202;
+}
+
+.cab {
+    height: 110px;
+    display: flex;
+    background-color: rgb(39, 12, 12);
+    color: rgb(255, 255, 255);
+    width: 1320px;
+    justify-content: space-around;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    align-items: center;
+    flex-direction: row;
+    font-size: 50px;
+}
+
+    .cab p, a {
+        padding-top: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-right: 10px solid #850000;
+        padding-right: 50px;
+        border-radius: 60px;
+        color: #f10e0e;
+        transition: 300ms;
+    }
+
+body {
+    background-color: rgb(42, 8, 8);
+    justify-content: center;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1320px;
+    min-height: 800px;
+    padding-bottom: 0px;
+}
+
+.containercapa {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+    width: 1320px;
+    height: 1000px;
+    padding-top: 80px;
+}
+
+.form-control, .form-select {
+    display: flex;
+    margin-bottom: 50px;
+    width: 85%;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+    .form-control:hover {
+        margin-bottom: 1px solid #500202;
+        ;
+    }
+
+
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 60px;
+    font-weight: bolder;
+    padding-bottom: 65px;
+    border-bottom: 1px solid #500202;
+}
+
+form {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.form-check {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+a.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    font-size: 40px;
+}
+
+
+
+.checks {
+    margin-bottom: 40px;
+}
+
+.atev {
+    margin-bottom: 60px;
+}
+
+    .atev input {
+        margin-bottom: 30px;
+    }
+
+
+.contato, .endereco, .adicionais, .origem, .classificacao {
+    margin-bottom: 30px;
+    border-top: 1px solid #500202;
+}
+
+.data {
+    display: flex;
+    margin-bottom: 40px;
+    height: 80px;
+    display: flex;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.button {
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #3d0606;
+    padding: 5px;
+    margin-right: 50px;
+    width: 120px;
+    transition: 300ms;
+    text-align: center;
+    margin-top: 50px;
+}
+
+    .button:hover {
+        background-color: #3d0606;
+        border-radius: 10px;
+        color: #ffffff;
+    }
+
+.cab a {
+    margin-right: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+    .cab a:hover {
+        border-right: 7px solid #fffea5;
+        color: #ff0303;
+    }
+
+footer {
+    height: 120px;
+    background-color: rgb(6, 2, 3);
+    width: 1320px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+a {
+    font-size: 30px;
+    padding: 60px;
+    text-decoration: none;
+    color: rgb(19, 1, 1);
+    font-weight: bolder;
+}
